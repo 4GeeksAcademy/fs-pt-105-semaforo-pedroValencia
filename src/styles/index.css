@@ -1,11 +1,58 @@
-/* 
+.semaforo {
+    background-color: black;
+    width: 150px;
+    height: 100%;
+    border-radius: 5%;
+    align-items: center;
+}
 
-    You can write your own styles here...
+.rojo {
+    background-color: red;
+    color: white;
+    margin: 10px 10px 10px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
     
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.amarillo {
+    background-color: yellow;
+    color: white;
+    margin: 10px 10px 10px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.verde {
+    background-color: green;
+    color: white;
+    margin: 10px 10px 10px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.morado {
+    background-color: purple;
+    color: white;
+    margin: 10px 10px 10px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.brillo {
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7); /* Efecto de luz */
+}

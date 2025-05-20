@@ -1,26 +1,22 @@
-import React from "react";
+import React,{useState} from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const Home = () => {
+	const [color, setColor] = useState ()
+	const [newColor, setNewColor] = useState (false)
 	return (
-		<div className="text-center">
+		<div className="d-flex justify-content-center">
+		<div className="semaforo">
             
-
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+			<button onClick={() => setColor("red") } className={`rojo ${color == "red" && "brillo"}`}></button>
+			<button onClick={() => setColor("yellow") } className={`amarillo ${color == "yellow" && "brillo"}`}></button>
+			<button onClick={() => setColor("green") } className={`verde ${color == "green" && "brillo"}`}></button>
+			{newColor == true && (
+				<button onClick={() => setColor("purple") } className={`morado ${color == "purple" && "brillo"}`}></button>
+			)}
+		</div>
+		<div>
+			<button onClick={() => setNewColor (true)} type="button" className="btn btn-warning">Add new color</button>
+		</div>		
 		</div>
 	);
 };
